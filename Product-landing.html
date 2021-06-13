@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style> 
         
-        #header-img1{
+        #mansion2{
         width: 100%;
         height: 750px;  
         }
@@ -51,7 +51,7 @@
             margin: 0;
             padding: 0;     
         }
-        .items {
+        .nav-link {
              display: block;
              padding: 15%;
              font-family: fantasy;
@@ -63,7 +63,7 @@
             font-size: 25px;
         }
 
-        #header-menu{
+        #header{
             display: grid;
             grid-template-columns: 1fr 3fr 1fr;
             justify-items: center; 
@@ -74,7 +74,7 @@
             color: #FF4000;    
         }
 
-        #logo{
+        #header-img{
             height: 15%;
 
         }
@@ -88,7 +88,6 @@
             color: aliceblue;
             font-size: 25px;
             font-family: serif;
-            
             display: grid;
             grid-template-rows: auto auto auto;
             justify-items: center;
@@ -98,7 +97,7 @@
             
         }
 
-        #mansion2{
+        #mansion3{
             height: 815px;
             width: 100%;
             position: absolute;
@@ -166,43 +165,48 @@
             justify-content: space-around;
         }
 
-        .link{
+        .nav-link{
             text-decoration: none;
             color: whitesmoke;
         }
+
+        
+        
     </style>
 </head>
 
 <body>
-<div id="header-menu">
+<div id="header">
         <h1 id="Menu" style="font-family:monospace; font-size: 40px;">Menu</h1>
         <h2 ><strong>Abedi Architecture</strong></h2>
-        <img id="logo" src="logo.jpg" alt="" >
-        </div>
-        <div id="nav-bar">
-            <nav>  
+        <img id="header-img" src="logo.jpg" alt="" >
+        
+        <div >
+            <nav id="nav-bar">  
                 <ul class="header-list-items">
-                    <li id="list-item1" class="items"> <a href="#feature" class="link">Features</a> </li>
-                    <li id="list-item2" class="items"> <a href="#feature" class="link"> Why Abedi architecture?</a> </li>
-                    <li id="list-item3" class="items"><a href="#price-section" class="link"> Pricing</a> </li>
+                    <li id="list-item1" class="items"> <a href="#feature" class="nav-link">Features</a> </li>
+                    <li id="list-item2" class="items"> <a href="#feature" class="nav-link"> Why Abedi architecture?</a> </li>
+                    <li id="list-item3" class="items"><a href="#price-section" class="nav-link"> Pricing</a> </li>
                 </ul>     
             </nav>
         </div>
     </div>        
-<div id="header">
-    <img id="header-img1"src="mansion2.jpg" alt="" > 
+<div >
+    <img id="mansion2"src="mansion2.jpg" alt="" > 
     </div>
     
 
-    <img src="mansion3.jpg" alt="" id="mansion2">
+    <img src="mansion3.jpg" alt="" id="mansion3">
 <div id="feature">
     <h3 ><strong>Looking for interior design proffesionals?</strong></h3>
     <p>Our team consists of proffesionals who can design your house in modern style</p>
     <p>If you are looking for civil engineers to build your desirable accomadation, contact us.</p><br>
     <br><br>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
     <label for="email" id="email-label">enter your email now!</label><br>
-    <input type="email" id="email"><br>
-    <input type="submit" id="submit" ><br>
+    <input type="email" id="email" placeholder="enter email"><br>
+    <a href="https://www.freecodecamp.com/email-submit"><input type="submit" id="submit"  ></a><br>
+    </form>
     <div id="why">   
         <h4><strong> Why us?</strong></h4>
         <ul id="why-abedi">
@@ -215,6 +219,10 @@
     </div>
 </div>
 
+<video width="320" height="240" controls id="video">
+    <source src="arch.mp4"  >
+    
+  </video>
 
 <div id="price-section">
     <div id="price1">
