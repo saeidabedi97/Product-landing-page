@@ -3,114 +3,102 @@
 <head > 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style> 
-        
-        #mansion2{
-        width: 100%;
-        height: 750px;  
-        }
-    
         body{
             background-color: rgba(46, 64, 87, 1);
             margin:0 auto;
         }
-    
-        #nav-bar{        
-            position: absolute;
-            left: 5%;
-            bottom: 20%;
-            width: 20%;
-        }   
 
-        #list-item1{
+        #list-item1 ,#list-item2, #list-item3{
             opacity: 65%;
-        }
-
-        #list-item2{
-            opacity: 65%;
-        }
-
-        #list-item3{
-            opacity: 65%;
+            padding: 25px;
+            justify-content: center;
         }
         
-        #list-item1:hover{
+        #list-item1:hover,#list-item2:hover,#list-item3:hover{
             opacity: 100%;
         }
-
-        #list-item2:hover{
-            opacity: 100%;
-        }
-        #list-item3:hover{
-            opacity: 100%;
-        }
-
 
         
         .header-list-items {
             list-style-type: none;
             margin: 0;
-            padding: 0;     
+            padding: 0;  
+            display: flex;
+            flex-flow: row;    
         }
         .nav-link {
-             display: block;
-             padding: 15%;
              font-family: fantasy;
+             text-decoration: none;
+             color: whitesmoke;
             }
+
+        #nav-bar{
+            position: fixed;
+        }
 
         #list-item1, #list-item2, #list-item3{
             border:3px solid #F0386B;
             color: whitesmoke;
             font-size: 25px;
+            
         }
+
 
         #header{
             display: grid;
-            grid-template-columns: 1fr 3fr 1fr;
-            justify-items: center; 
-            width: 100%;
-            height: 102%;
-            position: absolute;
+            grid-template-columns: auto auto auto ;
+            grid-template-rows: 1fr;
+            justify-content: right;
+            position: fixed;
             background-color:rgba(0, 0, 0, 0.6);
-            color: #FF4000;    
+            width: 100%;
+            height: 15%;
+            color: #FF4000; 
         }
 
         #header-img{
-            height: 15%;
+            
+            height: 30%;
 
         }
 
-        h2{
+        h1{
             font-size: 35px;
             font-family: monospace;
+            height: auto;
         }
         #feature{
-            background-color: rgba(0, 0, 0, 0.6);
+            /* background-color: rgba(0, 0, 0, 0.6); */
             color: aliceblue;
             font-size: 25px;
             font-family: serif;
             display: grid;
             grid-template-rows: auto auto auto;
             justify-items: center;
-            position: relative;
+            
             height: 100%;
             
             
         }
 
-        #mansion3{
-            height: 815px;
-            width: 100%;
-            position: absolute;
+        #mansion2{
+        width: 100%;
+        height: 750px;  
+        
         }
+        @media screen and (max-width: 480px) {
+  #mansion2 {
+    width: 100%;
+    height: 100%;
+  }
+}
 
-        #email{
+        #email,#submit{
             
             border:3px solid #F0386B;
         }
 
-        #submit{
-            border:3px solid #F0386B;
-        }
+        
 
         h3{
             color: #129490;
@@ -127,33 +115,18 @@
         }
 
         #email-label{
-            color: #F0386B;
+            color: #424242;
         }
        
 
-         #price1{
+          #price1, #price2, #price3{
             background-color: #66999B; 
             border-radius: 20px;
             padding: 10px; 
             color: whitesmoke;
             text-align: center;
-        } 
+        }  
 
-        #price2{
-            background-color: #66999B;
-            border-radius: 20px;
-            padding: 10px;
-            color: whitesmoke;
-            text-align: center;
-        }
-
-        #price3{
-            background-color: #66999B;
-            border-radius: 20px;
-            padding: 10px;
-            color: whitesmoke;
-            text-align: center;
-        }
 
         #price-section{
             color: black;
@@ -163,49 +136,36 @@
             display: flex;
             flex-flow: row;
             justify-content: space-around;
-        }
-
-        .nav-link{
-            text-decoration: none;
-            color: whitesmoke;
-        }
-
-        
-        
+        } 
     </style>
 </head>
 
 <body>
+    
 <div id="header">
-        <h1 id="Menu" style="font-family:monospace; font-size: 40px;">Menu</h1>
-        <h2 ><strong>Abedi Architecture</strong></h2>
-        <img id="header-img" src="logo.jpg" alt="" >
-        
-        <div >
             <nav id="nav-bar">  
                 <ul class="header-list-items">
                     <li id="list-item1" class="items"> <a href="#feature" class="nav-link">Features</a> </li>
                     <li id="list-item2" class="items"> <a href="#feature" class="nav-link"> Why Abedi architecture?</a> </li>
                     <li id="list-item3" class="items"><a href="#price-section" class="nav-link"> Pricing</a> </li>
                 </ul>     
-            </nav>
-        </div>
-    </div>        
-    <div >
-    <img id="mansion2"src="mansion2.jpg" alt="" > 
-    </div>
+            </nav>  
+            <h1 ><strong>Abedi Architecture</strong></h1>
+            <img id="header-img" src="https://i.pinimg.com/originals/ee/07/c3/ee07c36619a9c680d3c0f21b1d3d35bd.png" alt="" >  
+</div>        
     
+    <img id="mansion2"src="https://images.adsttc.com/media/images/5df1/28d3/3312/fdec/ff00/02fd/large_jpg/12_BIG_KIS_The-Twist_Image-by-Laurian-Ghinitoiu.jpg?1576085707" alt="" >     
 
-    <img src="mansion3.jpg" alt="" id="mansion3">
+    
 <div id="feature">
     <h3 ><strong>Looking for interior design proffesionals?</strong></h3>
     <p>Our team consists of proffesionals who can design your house in modern style</p>
     <p>If you are looking for civil engineers to build your desirable accomadation, contact us.</p><br>
     <br><br>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
     <label for="email" id="email-label">enter your email now!</label><br>
-    <input type="email" id="email" placeholder="enter email"><br>
-    <a href="https://www.freecodecamp.com/email-submit"><input type="submit" id="submit"  ></a><br>
+    <input type="email" id="email" placeholder="enter email" name="email"><br>
+    <input type="submit" id="submit" ><br>
     </form>
     <div id="why">   
         <h4><strong> Why us?</strong></h4>
